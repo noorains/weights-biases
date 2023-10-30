@@ -19,6 +19,7 @@ max_depth = wandb.config.max_depth
 min_samples_split = wandb.config.min_samples_split
 criterion = wandb.config.criterion
 
+
 # Log hyperparameters to WandB
 wandb.config.test_size = test_size
 wandb.config.max_depth = max_depth

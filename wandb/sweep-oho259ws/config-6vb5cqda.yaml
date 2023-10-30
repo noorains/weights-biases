@@ -1,0 +1,10 @@
+wandb_version: 1
+
+criterion:
+  value: gini
+max_depth:
+  value: 3
+min_samples_split:
+  value: 2
+test_size:
+  value: 0.1615032447190557

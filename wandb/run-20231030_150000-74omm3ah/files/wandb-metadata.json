@@ -1,0 +1,42 @@
+{
+    "os": "macOS-13.5-arm64-arm-64bit",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-10-30T14:00:01.591115",
+    "startedAt": "2023-10-30T14:00:00.912662",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--criterion=gini",
+        "--max_depth=3",
+        "--min_samples_split=7",
+        "--test_size=0.4011019208402552"
+    ],
+    "state": "running",
+    "program": "/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model--sweep.py",
+    "codePathLocal": "iris--model--sweep.py",
+    "codePath": "iris--model--sweep.py",
+    "git": {
+        "remote": "https://github.com/noorains/weights-biases.git",
+        "commit": "49f2f9ddd254a1d554c2fb27ec9fe908c69c5219"
+    },
+    "email": "142994595+nskazmi@users.noreply.github.com",
+    "root": "/Users/noorainkazmi/Documents/GitHub/weights-biases",
+    "host": "Noorains-MacBook-Air.local",
+    "username": "noorainkazmi",
+    "executable": "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 8.884220123291016
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

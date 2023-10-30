@@ -1,5 +1,5 @@
 program: iris--model--sweep.py
-method: random
+method: bayes
 metric:
   goal: maximize
   name: Accuracy
