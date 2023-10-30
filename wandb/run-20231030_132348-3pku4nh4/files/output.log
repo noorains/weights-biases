@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model--sweep.py", line 50, in <module>
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=args.test_size, random_state=42)
+NameError: name 'args' is not defined

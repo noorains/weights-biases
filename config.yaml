@@ -1,0 +1,9 @@
+# Hyperparameters
+test_size: 0.5
+max_depth: 1
+min_samples_split: 3
+criterion: gini
+
+# Experiment settings
+project: decision_tree_sw
+entity: nookaz

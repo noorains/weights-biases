@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model.py", line 21, in <module>
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size, random_state=42)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/model_selection/_split.py", line 2646, in train_test_split
+    arrays = indexable(*arrays)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/utils/validation.py", line 453, in indexable
+    check_consistent_length(*result)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/utils/validation.py", line 404, in check_consistent_length
+    lengths = [_num_samples(X) for X in arrays if X is not None]
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/utils/validation.py", line 404, in <listcomp>
+    lengths = [_num_samples(X) for X in arrays if X is not None]
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/sklearn/utils/validation.py", line 345, in _num_samples
+    raise TypeError(
+TypeError: Singleton array array(0.5) cannot be considered a valid collection.

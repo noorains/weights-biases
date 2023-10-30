@@ -1,0 +1,175 @@
+2023-10-30 14:03:44,139 INFO    StreamThr :19216 [internal.py:wandb_internal():86] W&B internal server running at pid: 19216, started at: 2023-10-30 14:03:44.138925
+2023-10-30 14:03:44,141 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: status
+2023-10-30 14:03:44,154 INFO    WriterThread:19216 [datastore.py:open_for_write():85] open: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/run-5dkuvnbg.wandb
+2023-10-30 14:03:44,155 DEBUG   SenderThread:19216 [sender.py:send():380] send: header
+2023-10-30 14:03:44,170 DEBUG   SenderThread:19216 [sender.py:send():380] send: run
+2023-10-30 14:03:44,638 INFO    SenderThread:19216 [dir_watcher.py:__init__():211] watching files in: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files
+2023-10-30 14:03:44,638 INFO    SenderThread:19216 [sender.py:_start_run_threads():1122] run started: 5dkuvnbg with start time 1698671024.139565
+2023-10-30 14:03:44,664 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: check_version
+2023-10-30 14:03:44,664 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: check_version
+2023-10-30 14:03:44,792 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: run_start
+2023-10-30 14:03:44,799 DEBUG   HandlerThread:19216 [system_info.py:__init__():32] System info init
+2023-10-30 14:03:44,800 DEBUG   HandlerThread:19216 [system_info.py:__init__():47] System info init done
+2023-10-30 14:03:44,800 INFO    HandlerThread:19216 [system_monitor.py:start():194] Starting system monitor
+2023-10-30 14:03:44,800 INFO    SystemMonitor:19216 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-30 14:03:44,800 INFO    HandlerThread:19216 [system_monitor.py:probe():214] Collecting system info
+2023-10-30 14:03:44,801 INFO    SystemMonitor:19216 [interfaces.py:start():190] Started cpu monitoring
+2023-10-30 14:03:44,801 INFO    SystemMonitor:19216 [interfaces.py:start():190] Started disk monitoring
+2023-10-30 14:03:44,801 DEBUG   HandlerThread:19216 [system_info.py:probe():196] Probing system
+2023-10-30 14:03:44,801 INFO    SystemMonitor:19216 [interfaces.py:start():190] Started gpuapple monitoring
+2023-10-30 14:03:44,806 INFO    SystemMonitor:19216 [interfaces.py:start():190] Started memory monitoring
+2023-10-30 14:03:44,807 INFO    SystemMonitor:19216 [interfaces.py:start():190] Started network monitoring
+2023-10-30 14:03:44,811 DEBUG   HandlerThread:19216 [system_info.py:_probe_git():181] Probing git
+2023-10-30 14:03:44,826 DEBUG   HandlerThread:19216 [system_info.py:_probe_git():189] Probing git done
+2023-10-30 14:03:44,826 DEBUG   HandlerThread:19216 [system_info.py:probe():244] Probing system done
+2023-10-30 14:03:44,826 DEBUG   HandlerThread:19216 [system_monitor.py:probe():223] {'os': 'macOS-13.5-arm64-arm-64bit', 'python': '3.10.12', 'heartbeatAt': '2023-10-30T13:03:44.801877', 'startedAt': '2023-10-30T13:03:44.120856', 'docker': None, 'cuda': None, 'args': ('--criterion=entropy', '--max_depth=2', '--min_samples_split=5', '--test_size=0.4594357674441768'), 'state': 'running', 'program': '/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model--sweep.py', 'codePathLocal': 'iris--model--sweep.py', 'codePath': 'iris--model--sweep.py', 'git': {'remote': 'https://github.com/noorains/weights-biases.git', 'commit': '40b29b34d36d37aa5d44ce3c1c3ef228984b5c04'}, 'email': '142994595+nskazmi@users.noreply.github.com', 'root': '/Users/noorainkazmi/Documents/GitHub/weights-biases', 'host': 'Noorains-MacBook-Air.local', 'username': 'noorainkazmi', 'executable': '/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 8.884220123291016}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-10-30 14:03:44,826 INFO    HandlerThread:19216 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-30 14:03:44,826 INFO    HandlerThread:19216 [system_monitor.py:probe():227] Publishing system info
+2023-10-30 14:03:44,826 DEBUG   HandlerThread:19216 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-30 14:03:44,826 DEBUG   HandlerThread:19216 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-30 14:03:44,827 INFO    HandlerThread:19216 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-30 14:03:44,828 DEBUG   SenderThread:19216 [sender.py:send():380] send: files
+2023-10-30 14:03:44,828 INFO    SenderThread:19216 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-30 14:03:44,833 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 14:03:44,833 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 14:03:44,833 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 14:03:44,836 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-30 14:03:45,122 DEBUG   SenderThread:19216 [sender.py:send():380] send: telemetry
+2023-10-30 14:03:45,123 DEBUG   SenderThread:19216 [sender.py:send():380] send: history
+2023-10-30 14:03:45,123 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: summary_record
+2023-10-30 14:03:45,123 INFO    SenderThread:19216 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:03:45,123 DEBUG   SenderThread:19216 [sender.py:send():380] send: telemetry
+2023-10-30 14:03:45,123 DEBUG   SenderThread:19216 [sender.py:send():380] send: exit
+2023-10-30 14:03:45,123 INFO    SenderThread:19216 [sender.py:send_exit():585] handling exit code: 0
+2023-10-30 14:03:45,123 INFO    SenderThread:19216 [sender.py:send_exit():587] handling runtime: 0
+2023-10-30 14:03:45,123 INFO    SenderThread:19216 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:03:45,123 INFO    SenderThread:19216 [sender.py:send_exit():593] send defer
+2023-10-30 14:03:45,123 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,123 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-30 14:03:45,124 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,124 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-30 14:03:45,124 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 1
+2023-10-30 14:03:45,124 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,124 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-30 14:03:45,124 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,124 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-30 14:03:45,124 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 2
+2023-10-30 14:03:45,124 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,124 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-30 14:03:45,124 INFO    HandlerThread:19216 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-30 14:03:45,124 INFO    HandlerThread:19216 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-30 14:03:45,124 DEBUG   SystemMonitor:19216 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-30 14:03:45,124 DEBUG   SystemMonitor:19216 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-30 14:03:45,124 DEBUG   SystemMonitor:19216 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-30 14:03:45,124 INFO    HandlerThread:19216 [interfaces.py:finish():202] Joined disk monitor
+2023-10-30 14:03:45,288 INFO    HandlerThread:19216 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-10-30 14:03:45,288 INFO    HandlerThread:19216 [interfaces.py:finish():202] Joined memory monitor
+2023-10-30 14:03:45,288 INFO    HandlerThread:19216 [interfaces.py:finish():202] Joined network monitor
+2023-10-30 14:03:45,288 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 3
+2023-10-30 14:03:45,288 DEBUG   SenderThread:19216 [sender.py:send():380] send: telemetry
+2023-10-30 14:03:45,288 DEBUG   SenderThread:19216 [sender.py:send():380] send: stats
+2023-10-30 14:03:45,288 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,288 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-30 14:03:45,288 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 4
+2023-10-30 14:03:45,288 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,288 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-30 14:03:45,288 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-30 14:03:45,288 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 5
+2023-10-30 14:03:45,289 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,289 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-30 14:03:45,289 DEBUG   SenderThread:19216 [sender.py:send():380] send: summary
+2023-10-30 14:03:45,289 INFO    SenderThread:19216 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:03:45,289 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,289 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-30 14:03:45,289 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 6
+2023-10-30 14:03:45,289 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,289 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-30 14:03:45,289 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,289 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-30 14:03:45,291 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:03:45,400 INFO    wandb-upload_0:19216 [upload_job.py:push():131] Uploaded file /var/folders/qx/vpttxp096k9bhf2r8qcpdxlm0000gn/T/tmp3o_l106wwandb/mgj3ejcc-wandb-metadata.json
+2023-10-30 14:03:45,466 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 7
+2023-10-30 14:03:45,466 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:45,466 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-30 14:03:45,466 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:45,466 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-30 14:03:45,645 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/config.yaml
+2023-10-30 14:03:45,646 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/wandb-summary.json
+2023-10-30 14:03:45,647 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/output.log
+2023-10-30 14:03:45,647 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/wandb-metadata.json
+2023-10-30 14:03:45,647 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/requirements.txt
+2023-10-30 14:03:45,842 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 14:03:47,134 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 8
+2023-10-30 14:03:47,135 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 14:03:47,135 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:47,136 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-30 14:03:47,137 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:47,138 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-30 14:03:47,138 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 9
+2023-10-30 14:03:47,138 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:47,139 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-30 14:03:47,139 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:47,139 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-30 14:03:47,139 INFO    SenderThread:19216 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-30 14:03:47,652 INFO    Thread-12 :19216 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/output.log
+2023-10-30 14:03:47,653 INFO    SenderThread:19216 [dir_watcher.py:finish():388] scan: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files
+2023-10-30 14:03:47,653 INFO    SenderThread:19216 [dir_watcher.py:finish():402] scan save: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/requirements.txt requirements.txt
+2023-10-30 14:03:47,653 INFO    SenderThread:19216 [dir_watcher.py:finish():402] scan save: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/output.log output.log
+2023-10-30 14:03:47,654 INFO    SenderThread:19216 [dir_watcher.py:finish():402] scan save: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/config.yaml config.yaml
+2023-10-30 14:03:47,654 INFO    SenderThread:19216 [dir_watcher.py:finish():402] scan save: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/wandb-summary.json wandb-summary.json
+2023-10-30 14:03:47,654 INFO    SenderThread:19216 [dir_watcher.py:finish():402] scan save: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/wandb-metadata.json wandb-metadata.json
+2023-10-30 14:03:47,654 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 10
+2023-10-30 14:03:47,655 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:47,655 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-30 14:03:47,657 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:47,657 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-30 14:03:47,657 INFO    SenderThread:19216 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 14:03:48,071 INFO    wandb-upload_0:19216 [upload_job.py:push():131] Uploaded file /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/requirements.txt
+2023-10-30 14:03:48,092 INFO    wandb-upload_1:19216 [upload_job.py:push():131] Uploaded file /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/output.log
+2023-10-30 14:03:48,123 INFO    wandb-upload_2:19216 [upload_job.py:push():131] Uploaded file /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/config.yaml
+2023-10-30 14:03:48,173 INFO    wandb-upload_3:19216 [upload_job.py:push():131] Uploaded file /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/files/wandb-summary.json
+2023-10-30 14:03:48,378 INFO    Thread-11 (_thread_body):19216 [sender.py:transition_state():613] send defer: 11
+2023-10-30 14:03:48,379 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:48,379 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-30 14:03:48,380 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:48,380 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-30 14:03:48,380 INFO    SenderThread:19216 [file_pusher.py:join():181] waiting for file pusher
+2023-10-30 14:03:48,380 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 12
+2023-10-30 14:03:48,380 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:48,380 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-30 14:03:48,381 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:48,381 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-30 14:03:48,381 INFO    SenderThread:19216 [file_stream.py:finish():595] file stream finish called
+2023-10-30 14:03:48,569 INFO    SenderThread:19216 [file_stream.py:finish():599] file stream finish is done
+2023-10-30 14:03:48,569 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 13
+2023-10-30 14:03:48,570 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:48,570 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-30 14:03:48,570 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:48,570 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-30 14:03:48,570 INFO    SenderThread:19216 [sender.py:transition_state():613] send defer: 14
+2023-10-30 14:03:48,571 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:03:48,571 INFO    HandlerThread:19216 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-30 14:03:48,571 DEBUG   SenderThread:19216 [sender.py:send():380] send: final
+2023-10-30 14:03:48,571 DEBUG   SenderThread:19216 [sender.py:send():380] send: footer
+2023-10-30 14:03:48,571 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:03:48,571 INFO    SenderThread:19216 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-30 14:03:48,572 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 14:03:48,573 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 14:03:48,573 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: server_info
+2023-10-30 14:03:48,573 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 14:03:48,573 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-30 14:03:48,574 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: server_info
+2023-10-30 14:03:48,574 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-30 14:03:48,577 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: job_info
+2023-10-30 14:03:48,725 DEBUG   SenderThread:19216 [sender.py:send_request():407] send_request: job_info
+2023-10-30 14:03:48,727 DEBUG   HandlerThread:19216 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-30 14:03:48,728 INFO    HandlerThread:19216 [handler.py:finish():866] shutting down handler
+2023-10-30 14:03:49,579 INFO    WriterThread:19216 [datastore.py:close():294] close: /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_140344-5dkuvnbg/run-5dkuvnbg.wandb
+2023-10-30 14:03:49,727 INFO    SenderThread:19216 [sender.py:finish():1534] shutting down sender
+2023-10-30 14:03:49,727 INFO    SenderThread:19216 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 14:03:49,727 INFO    SenderThread:19216 [file_pusher.py:join():181] waiting for file pusher

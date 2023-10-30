@@ -1,0 +1,1316 @@
+2023-10-30 13:26:53 ERROR 400 response executing GraphQL.
+2023-10-30 13:26:53 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:26:53 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:27:56 ERROR 400 response executing GraphQL.
+2023-10-30 13:27:56 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:27:56 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:29:10 ERROR 400 response executing GraphQL.
+2023-10-30 13:29:10 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:29:10 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:29:20 ERROR 400 response executing GraphQL.
+2023-10-30 13:29:20 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:29:20 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:29:31 ERROR 400 response executing GraphQL.
+2023-10-30 13:29:31 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:29:31 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:31:03 ERROR 400 response executing GraphQL.
+2023-10-30 13:31:03 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:31:03 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:39:39 ERROR 400 response executing GraphQL.
+2023-10-30 13:39:39 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:39:39 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:42:47 ERROR 400 response executing GraphQL.
+2023-10-30 13:42:47 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2023-10-30 13:42:47 ERROR Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1001, in sweep
+    response = self.gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 338, in gql
+    ret = self._retry_gql(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/cli/cli.py", line 1496, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 583, in agent
+    return run_agent(
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 126, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2023-10-30 13:51:13 INFO Running runs: []
+2023-10-30 13:51:14 INFO Agent received command: run
+2023-10-30 13:51:14 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 6
+	min_samples_split: 2
+	test_size: 0.11972476485679058
+2023-10-30 13:51:14 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=6 --min_samples_split=2 --test_size=0.11972476485679058
+2023-10-30 13:51:19 INFO Running runs: ['2fixpmiq']
+2023-10-30 13:51:24 INFO Cleaning up finished run: 2fixpmiq
+2023-10-30 13:51:26 INFO Agent received command: run
+2023-10-30 13:51:26 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 8
+	test_size: 0.19485657374703455
+2023-10-30 13:51:26 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=8 --test_size=0.19485657374703455
+2023-10-30 13:51:31 INFO Running runs: ['akeemvft']
+2023-10-30 13:51:36 INFO Cleaning up finished run: akeemvft
+2023-10-30 13:51:36 INFO Agent received command: run
+2023-10-30 13:51:36 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 3
+	test_size: 0.15189149518682818
+2023-10-30 13:51:36 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=3 --test_size=0.15189149518682818
+2023-10-30 13:51:41 INFO Running runs: ['hickgoad']
+2023-10-30 13:51:46 INFO Cleaning up finished run: hickgoad
+2023-10-30 13:51:47 INFO Agent received command: run
+2023-10-30 13:51:47 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 5
+	min_samples_split: 2
+	test_size: 0.10957422813608628
+2023-10-30 13:51:47 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=5 --min_samples_split=2 --test_size=0.10957422813608628
+2023-10-30 13:51:52 INFO Running runs: ['e2okikgo']
+2023-10-30 13:51:57 INFO Cleaning up finished run: e2okikgo
+2023-10-30 13:51:57 INFO Agent received command: run
+2023-10-30 13:51:57 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 2
+	test_size: 0.2546937154576461
+2023-10-30 13:51:57 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=2 --test_size=0.2546937154576461
+2023-10-30 13:52:02 INFO Running runs: ['edzg44po']
+2023-10-30 13:52:08 INFO Cleaning up finished run: edzg44po
+2023-10-30 13:52:08 INFO Agent received command: run
+2023-10-30 13:52:08 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 8
+	test_size: 0.2923802164892835
+2023-10-30 13:52:08 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=8 --test_size=0.2923802164892835
+2023-10-30 13:52:13 INFO Running runs: ['eyepcazs']
+2023-10-30 13:52:18 INFO Cleaning up finished run: eyepcazs
+2023-10-30 13:52:19 INFO Agent received command: run
+2023-10-30 13:52:19 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 4
+	test_size: 0.1964108688032182
+2023-10-30 13:52:19 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=4 --test_size=0.1964108688032182
+2023-10-30 13:52:24 INFO Running runs: ['k0cdm0ck']
+2023-10-30 13:52:29 INFO Cleaning up finished run: k0cdm0ck
+2023-10-30 13:52:29 INFO Agent received command: run
+2023-10-30 13:52:29 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 2
+	test_size: 0.2641920191734275
+2023-10-30 13:52:29 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=2 --test_size=0.2641920191734275
+2023-10-30 13:52:34 INFO Running runs: ['00r1qgnc']
+2023-10-30 13:52:39 INFO Cleaning up finished run: 00r1qgnc
+2023-10-30 13:52:41 INFO Agent received command: run
+2023-10-30 13:52:41 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 4
+	test_size: 0.16376760552122266
+2023-10-30 13:52:41 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=4 --test_size=0.16376760552122266
+2023-10-30 13:52:46 INFO Running runs: ['lzv4q91x']
+2023-10-30 13:52:51 INFO Cleaning up finished run: lzv4q91x
+2023-10-30 13:52:51 INFO Agent received command: run
+2023-10-30 13:52:51 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 8
+	test_size: 0.210509294623221
+2023-10-30 13:52:51 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=8 --test_size=0.210509294623221
+2023-10-30 13:52:57 INFO Running runs: ['fa9o0l9e']
+2023-10-30 13:53:02 INFO Cleaning up finished run: fa9o0l9e
+2023-10-30 13:53:02 INFO Agent received command: run
+2023-10-30 13:53:02 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 9
+	test_size: 0.1494706489439125
+2023-10-30 13:53:02 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=9 --test_size=0.1494706489439125
+2023-10-30 13:53:07 INFO Running runs: ['2p1kvtsf']
+2023-10-30 13:53:12 INFO Cleaning up finished run: 2p1kvtsf
+2023-10-30 13:53:13 INFO Agent received command: run
+2023-10-30 13:53:13 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 6
+	min_samples_split: 2
+	test_size: 0.1896641578996917
+2023-10-30 13:53:13 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=6 --min_samples_split=2 --test_size=0.1896641578996917
+2023-10-30 13:53:18 INFO Running runs: ['at33v6pg']
+2023-10-30 13:53:23 INFO Cleaning up finished run: at33v6pg
+2023-10-30 13:53:23 INFO Agent received command: run
+2023-10-30 13:53:23 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 9
+	test_size: 0.13541482073355587
+2023-10-30 13:53:23 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=9 --test_size=0.13541482073355587
+2023-10-30 13:53:28 INFO Running runs: ['rc68cly2']
+2023-10-30 13:53:34 INFO Cleaning up finished run: rc68cly2
+2023-10-30 13:53:34 INFO Agent received command: run
+2023-10-30 13:53:34 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 7
+	test_size: 0.220694447883987
+2023-10-30 13:53:34 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=7 --test_size=0.220694447883987
+2023-10-30 13:53:39 INFO Running runs: ['hv875a8i']
+2023-10-30 13:53:44 INFO Cleaning up finished run: hv875a8i
+2023-10-30 13:53:44 INFO Agent received command: run
+2023-10-30 13:53:44 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 6
+	test_size: 0.1268099996520535
+2023-10-30 13:53:44 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=6 --test_size=0.1268099996520535
+2023-10-30 13:53:49 INFO Running runs: ['ud678wvd']
+2023-10-30 13:53:55 INFO Cleaning up finished run: ud678wvd
+2023-10-30 13:53:55 INFO Agent received command: run
+2023-10-30 13:53:55 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 4
+	test_size: 0.258336166095365
+2023-10-30 13:53:55 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=4 --test_size=0.258336166095365
+2023-10-30 13:54:00 INFO Running runs: ['p1uzczu1']
+2023-10-30 13:54:05 INFO Cleaning up finished run: p1uzczu1
+2023-10-30 13:54:06 INFO Agent received command: run
+2023-10-30 13:54:06 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 6
+	min_samples_split: 10
+	test_size: 0.23863922303702884
+2023-10-30 13:54:06 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=6 --min_samples_split=10 --test_size=0.23863922303702884
+2023-10-30 13:54:11 INFO Running runs: ['lmh1o4lm']
+2023-10-30 13:54:16 INFO Cleaning up finished run: lmh1o4lm
+2023-10-30 13:54:16 INFO Agent received command: run
+2023-10-30 13:54:16 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 8
+	test_size: 0.27512854865347014
+2023-10-30 13:54:16 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=8 --test_size=0.27512854865347014
+2023-10-30 13:54:21 INFO Running runs: ['0s0yptzl']
+2023-10-30 13:54:26 INFO Cleaning up finished run: 0s0yptzl
+2023-10-30 13:54:27 INFO Agent received command: run
+2023-10-30 13:54:27 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 3
+	test_size: 0.2852884572139164
+2023-10-30 13:54:27 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=3 --test_size=0.2852884572139164
+2023-10-30 13:54:32 INFO Running runs: ['155bv56m']
+2023-10-30 13:54:37 INFO Cleaning up finished run: 155bv56m
+2023-10-30 13:54:38 INFO Agent received command: run
+2023-10-30 13:54:38 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 6
+	min_samples_split: 5
+	test_size: 0.17427280241276777
+2023-10-30 13:54:38 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=6 --min_samples_split=5 --test_size=0.17427280241276777
+2023-10-30 13:54:43 INFO Running runs: ['4zltbw7k']
+2023-10-30 13:54:53 INFO Cleaning up finished run: 4zltbw7k
+2023-10-30 13:54:53 INFO Agent received command: run
+2023-10-30 13:54:53 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 5
+	test_size: 0.10769200499283885
+2023-10-30 13:54:53 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=5 --test_size=0.10769200499283885
+2023-10-30 13:54:58 INFO Running runs: ['m63bfyhx']
+2023-10-30 13:55:04 INFO Cleaning up finished run: m63bfyhx
+2023-10-30 13:55:04 INFO Agent received command: run
+2023-10-30 13:55:04 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 7
+	min_samples_split: 3
+	test_size: 0.29975754819037775
+2023-10-30 13:55:04 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=7 --min_samples_split=3 --test_size=0.29975754819037775
+2023-10-30 13:55:09 INFO Running runs: ['p5aho4fx']
+2023-10-30 13:55:14 INFO Cleaning up finished run: p5aho4fx
+2023-10-30 13:55:15 INFO Agent received command: run
+2023-10-30 13:55:15 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 2
+	test_size: 0.1896448702973252
+2023-10-30 13:55:15 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=2 --test_size=0.1896448702973252
+2023-10-30 13:55:20 INFO Running runs: ['tvokxrrf']
+2023-10-30 13:55:25 INFO Cleaning up finished run: tvokxrrf
+2023-10-30 13:55:25 INFO Agent received command: run
+2023-10-30 13:55:25 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 3
+	test_size: 0.19808802371943415
+2023-10-30 13:55:25 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=3 --test_size=0.19808802371943415
+2023-10-30 13:55:30 INFO Running runs: ['qdnroj3j']
+2023-10-30 13:55:35 INFO Cleaning up finished run: qdnroj3j
+2023-10-30 13:55:36 INFO Agent received command: run
+2023-10-30 13:55:36 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 2
+	test_size: 0.10112120888810242
+2023-10-30 13:55:36 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=2 --test_size=0.10112120888810242
+2023-10-30 13:55:41 INFO Running runs: ['8v0fxpqj']
+2023-10-30 13:55:46 INFO Cleaning up finished run: 8v0fxpqj
+2023-10-30 13:55:46 INFO Agent received command: run
+2023-10-30 13:55:46 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 6
+	min_samples_split: 9
+	test_size: 0.2643078495022787
+2023-10-30 13:55:46 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=6 --min_samples_split=9 --test_size=0.2643078495022787
+2023-10-30 13:55:51 INFO Running runs: ['fitllkyo']
+2023-10-30 13:55:57 INFO Cleaning up finished run: fitllkyo
+2023-10-30 13:55:57 INFO Agent received command: run
+2023-10-30 13:55:57 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 6
+	test_size: 0.23952086770960265
+2023-10-30 13:55:57 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=6 --test_size=0.23952086770960265
+2023-10-30 13:56:02 INFO Running runs: ['8iagug2a']
+2023-10-30 13:56:07 INFO Cleaning up finished run: 8iagug2a
+2023-10-30 13:56:08 INFO Agent received command: run
+2023-10-30 13:56:08 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 9
+	test_size: 0.2945030817687986
+2023-10-30 13:56:08 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=9 --test_size=0.2945030817687986
+2023-10-30 13:56:13 INFO Running runs: ['x190nwic']
+2023-10-30 13:56:23 INFO Cleaning up finished run: x190nwic
+2023-10-30 13:56:23 INFO Agent received command: run
+2023-10-30 13:56:23 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 7
+	min_samples_split: 9
+	test_size: 0.17761021717498668
+2023-10-30 13:56:23 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=7 --min_samples_split=9 --test_size=0.17761021717498668
+2023-10-30 13:56:28 INFO Running runs: ['hdmfd21b']
+2023-10-30 13:56:34 INFO Cleaning up finished run: hdmfd21b
+2023-10-30 13:56:34 INFO Agent received command: run
+2023-10-30 13:56:34 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 8
+	min_samples_split: 6
+	test_size: 0.1385823147771827
+2023-10-30 13:56:34 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=8 --min_samples_split=6 --test_size=0.1385823147771827
+2023-10-30 13:56:39 INFO Running runs: ['yqf6h6ql']
+2023-10-30 13:56:44 INFO Cleaning up finished run: yqf6h6ql
+2023-10-30 13:56:45 INFO Agent received command: run
+2023-10-30 13:56:45 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 7
+	test_size: 0.23510773191827716
+2023-10-30 13:56:45 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=7 --test_size=0.23510773191827716
+2023-10-30 13:56:50 INFO Running runs: ['6zv401vk']
+2023-10-30 13:56:55 INFO Cleaning up finished run: 6zv401vk
+2023-10-30 13:56:56 INFO Agent received command: run
+2023-10-30 13:56:56 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 6
+	min_samples_split: 3
+	test_size: 0.18122681133781793
+2023-10-30 13:56:56 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=6 --min_samples_split=3 --test_size=0.18122681133781793
+2023-10-30 13:57:01 INFO Running runs: ['a4lxq0s3']
+2023-10-30 13:57:06 INFO Cleaning up finished run: a4lxq0s3
+2023-10-30 13:57:06 INFO Agent received command: run
+2023-10-30 13:57:06 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 8
+	test_size: 0.17355964989174227
+2023-10-30 13:57:06 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=8 --test_size=0.17355964989174227
+2023-10-30 13:57:11 INFO Running runs: ['760n7xti']
+2023-10-30 13:57:17 INFO Cleaning up finished run: 760n7xti
+2023-10-30 13:57:17 INFO Agent received command: run
+2023-10-30 13:57:17 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 8
+	test_size: 0.2744900892521551
+2023-10-30 13:57:17 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=8 --test_size=0.2744900892521551
+2023-10-30 13:57:22 INFO Running runs: ['h0m3w72w']
+2023-10-30 13:57:27 INFO Cleaning up finished run: h0m3w72w
+2023-10-30 13:57:28 INFO Agent received command: run
+2023-10-30 13:57:28 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 7
+	test_size: 0.10125081606276765
+2023-10-30 13:57:28 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=7 --test_size=0.10125081606276765
+2023-10-30 13:57:33 INFO Running runs: ['1eiantxr']
+2023-10-30 13:57:38 INFO Cleaning up finished run: 1eiantxr
+2023-10-30 13:57:38 INFO Agent received command: run
+2023-10-30 13:57:38 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 7
+	test_size: 0.21855497259980536
+2023-10-30 13:57:38 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=7 --test_size=0.21855497259980536
+2023-10-30 13:57:43 INFO Running runs: ['7gfzewon']
+2023-10-30 13:57:48 INFO Cleaning up finished run: 7gfzewon
+2023-10-30 13:57:49 INFO Agent received command: run
+2023-10-30 13:57:49 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 10
+	test_size: 0.18966376625301348
+2023-10-30 13:57:49 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=10 --test_size=0.18966376625301348
+2023-10-30 13:57:54 INFO Running runs: ['10tqwjsg']
+2023-10-30 13:57:59 INFO Cleaning up finished run: 10tqwjsg
+2023-10-30 13:58:00 INFO Agent received command: run
+2023-10-30 13:58:00 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 5
+	test_size: 0.29866845493588656
+2023-10-30 13:58:00 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=5 --test_size=0.29866845493588656
+2023-10-30 13:58:05 INFO Running runs: ['e76qchjh']
+2023-10-30 13:58:10 INFO Cleaning up finished run: e76qchjh
+2023-10-30 13:58:11 INFO Agent received command: run
+2023-10-30 13:58:11 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 9
+	test_size: 0.2064301946854667
+2023-10-30 13:58:11 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=9 --test_size=0.2064301946854667
+2023-10-30 13:58:16 INFO Running runs: ['iz41fpjz']
+2023-10-30 13:58:21 INFO Cleaning up finished run: iz41fpjz
+2023-10-30 13:58:21 INFO Agent received command: exit
+2023-10-30 13:58:21 INFO Received exit command. Killing runs and quitting.
+2023-10-30 14:01:14 INFO Running runs: []
+2023-10-30 14:01:15 INFO Agent received command: run
+2023-10-30 14:01:15 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 4
+	test_size: 0.24672048650387496
+2023-10-30 14:01:15 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=4 --test_size=0.24672048650387496
+2023-10-30 14:01:20 INFO Running runs: ['ut92xlye']
+2023-10-30 14:01:25 INFO Cleaning up finished run: ut92xlye
+2023-10-30 14:01:26 INFO Agent received command: run
+2023-10-30 14:01:26 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 3
+	test_size: 0.19272307678122955
+2023-10-30 14:01:26 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=3 --test_size=0.19272307678122955
+2023-10-30 14:01:31 INFO Running runs: ['8ko3e0t8']
+2023-10-30 14:01:36 INFO Cleaning up finished run: 8ko3e0t8
+2023-10-30 14:01:37 INFO Agent received command: run
+2023-10-30 14:01:37 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 10
+	test_size: 0.1411006443899825
+2023-10-30 14:01:37 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=10 --test_size=0.1411006443899825
+2023-10-30 14:01:42 INFO Running runs: ['ybceuu0i']
+2023-10-30 14:01:47 INFO Cleaning up finished run: ybceuu0i
+2023-10-30 14:01:48 INFO Agent received command: run
+2023-10-30 14:01:48 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 8
+	test_size: 0.13428434289145516
+2023-10-30 14:01:48 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=8 --test_size=0.13428434289145516
+2023-10-30 14:01:53 INFO Running runs: ['j0impy5k']
+2023-10-30 14:01:59 INFO Cleaning up finished run: j0impy5k
+2023-10-30 14:01:59 INFO Agent received command: run
+2023-10-30 14:01:59 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 6
+	test_size: 0.22292546629460191
+2023-10-30 14:01:59 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=6 --test_size=0.22292546629460191
+2023-10-30 14:02:04 INFO Running runs: ['lipiyaer']
+2023-10-30 14:02:09 INFO Cleaning up finished run: lipiyaer
+2023-10-30 14:02:09 INFO Agent received command: exit
+2023-10-30 14:02:09 INFO Received exit command. Killing runs and quitting.
+2023-10-30 14:03:20 INFO Running runs: []
+2023-10-30 14:03:20 INFO Agent received command: run
+2023-10-30 14:03:20 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 9
+	test_size: 0.3818521931672595
+2023-10-30 14:03:20 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=9 --test_size=0.3818521931672595
+2023-10-30 14:03:25 INFO Running runs: ['knwp14pb']
+2023-10-30 14:03:30 INFO Cleaning up finished run: knwp14pb
+2023-10-30 14:03:31 INFO Agent received command: run
+2023-10-30 14:03:31 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 4
+	test_size: 0.3240876230542296
+2023-10-30 14:03:31 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=4 --test_size=0.3240876230542296
+2023-10-30 14:03:36 INFO Running runs: ['3gjmwodm']
+2023-10-30 14:03:42 INFO Cleaning up finished run: 3gjmwodm
+2023-10-30 14:03:42 INFO Agent received command: run
+2023-10-30 14:03:42 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 5
+	test_size: 0.4594357674441768
+2023-10-30 14:03:42 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=5 --test_size=0.4594357674441768
+2023-10-30 14:03:47 INFO Running runs: ['5dkuvnbg']
+2023-10-30 14:03:52 INFO Cleaning up finished run: 5dkuvnbg
+2023-10-30 14:03:53 INFO Agent received command: run
+2023-10-30 14:03:53 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 9
+	test_size: 0.11919493252989816
+2023-10-30 14:03:53 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=9 --test_size=0.11919493252989816
+2023-10-30 14:03:58 INFO Running runs: ['pkcy6pty']
+2023-10-30 14:04:08 INFO Cleaning up finished run: pkcy6pty
+2023-10-30 14:04:08 INFO Agent received command: run
+2023-10-30 14:04:08 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 8
+	test_size: 0.4276525850209933
+2023-10-30 14:04:08 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=8 --test_size=0.4276525850209933
+2023-10-30 14:04:13 INFO Running runs: ['ysdap1va']
+2023-10-30 14:04:18 INFO Cleaning up finished run: ysdap1va
+2023-10-30 14:04:19 INFO Agent received command: run
+2023-10-30 14:04:19 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 8
+	test_size: 0.2910706217953045
+2023-10-30 14:04:19 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=8 --test_size=0.2910706217953045
+2023-10-30 14:04:24 INFO Running runs: ['nqoycfkx']
+2023-10-30 14:04:29 INFO Cleaning up finished run: nqoycfkx
+2023-10-30 14:04:29 INFO Agent received command: run
+2023-10-30 14:04:29 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 7
+	test_size: 0.17067341112861092
+2023-10-30 14:04:29 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=7 --test_size=0.17067341112861092
+2023-10-30 14:04:34 INFO Running runs: ['9tdce3rz']
+2023-10-30 14:04:40 INFO Cleaning up finished run: 9tdce3rz
+2023-10-30 14:04:40 INFO Agent received command: run
+2023-10-30 14:04:40 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 3
+	test_size: 0.16308073683069607
+2023-10-30 14:04:40 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=3 --test_size=0.16308073683069607
+2023-10-30 14:04:45 INFO Running runs: ['fxjyc8oz']
+2023-10-30 14:04:50 INFO Cleaning up finished run: fxjyc8oz
+2023-10-30 14:04:51 INFO Agent received command: run
+2023-10-30 14:04:51 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 7
+	test_size: 0.23215322063921293
+2023-10-30 14:04:51 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=7 --test_size=0.23215322063921293
+2023-10-30 14:04:56 INFO Running runs: ['vxzwj1wq']
+2023-10-30 14:05:01 INFO Cleaning up finished run: vxzwj1wq
+2023-10-30 14:05:01 INFO Agent received command: run
+2023-10-30 14:05:01 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 5
+	test_size: 0.26078792305862275
+2023-10-30 14:05:01 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=5 --test_size=0.26078792305862275
+2023-10-30 14:05:06 INFO Running runs: ['6f0jh7u8']
+2023-10-30 14:05:11 INFO Cleaning up finished run: 6f0jh7u8
+2023-10-30 14:05:12 INFO Agent received command: run
+2023-10-30 14:05:12 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 7
+	min_samples_split: 10
+	test_size: 0.23569223004604917
+2023-10-30 14:05:12 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=7 --min_samples_split=10 --test_size=0.23569223004604917
+2023-10-30 14:05:17 INFO Running runs: ['bzl608ro']
+2023-10-30 14:05:22 INFO Cleaning up finished run: bzl608ro
+2023-10-30 14:05:22 INFO Agent received command: run
+2023-10-30 14:05:22 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 8
+	test_size: 0.32153627534999085
+2023-10-30 14:05:22 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=8 --test_size=0.32153627534999085
+2023-10-30 14:05:27 INFO Running runs: ['i5cfk4ag']
+2023-10-30 14:05:33 INFO Cleaning up finished run: i5cfk4ag
+2023-10-30 14:05:33 INFO Agent received command: run
+2023-10-30 14:05:33 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 6
+	test_size: 0.21822228613636332
+2023-10-30 14:05:33 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=6 --test_size=0.21822228613636332
+2023-10-30 14:05:38 INFO Running runs: ['metui8pn']
+2023-10-30 14:05:43 INFO Cleaning up finished run: metui8pn
+2023-10-30 14:05:44 INFO Agent received command: run
+2023-10-30 14:05:44 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 4
+	test_size: 0.3123257036700054
+2023-10-30 14:05:44 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=4 --test_size=0.3123257036700054
+2023-10-30 14:05:49 INFO Running runs: ['729cghqb']
+2023-10-30 14:05:54 INFO Cleaning up finished run: 729cghqb
+2023-10-30 14:05:54 INFO Agent received command: run
+2023-10-30 14:05:54 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 9
+	test_size: 0.19994034225412527
+2023-10-30 14:05:54 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=9 --test_size=0.19994034225412527
+2023-10-30 14:05:59 INFO Running runs: ['7rl844yp']
+2023-10-30 14:06:04 INFO Cleaning up finished run: 7rl844yp
+2023-10-30 14:06:05 INFO Agent received command: run
+2023-10-30 14:06:05 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 4
+	test_size: 0.1265906714715921
+2023-10-30 14:06:05 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=4 --test_size=0.1265906714715921
+2023-10-30 14:06:10 INFO Running runs: ['g5hkn38f']
+2023-10-30 14:06:15 INFO Cleaning up finished run: g5hkn38f
+2023-10-30 14:06:15 INFO Agent received command: run
+2023-10-30 14:06:15 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 3
+	test_size: 0.3845562983514206
+2023-10-30 14:06:15 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=3 --test_size=0.3845562983514206
+2023-10-30 14:06:20 INFO Running runs: ['wxaxjpuh']
+2023-10-30 14:06:25 INFO Cleaning up finished run: wxaxjpuh
+2023-10-30 14:06:26 INFO Agent received command: run
+2023-10-30 14:06:26 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 4
+	test_size: 0.14173637272023487
+2023-10-30 14:06:26 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=4 --test_size=0.14173637272023487
+2023-10-30 14:06:31 INFO Running runs: ['tky8z3fq']
+2023-10-30 14:06:36 INFO Cleaning up finished run: tky8z3fq
+2023-10-30 14:06:36 INFO Agent received command: run
+2023-10-30 14:06:36 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 9
+	test_size: 0.482911541152368
+2023-10-30 14:06:36 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=9 --test_size=0.482911541152368
+2023-10-30 14:06:41 INFO Running runs: ['dkj675iz']
+2023-10-30 14:06:46 INFO Cleaning up finished run: dkj675iz
+2023-10-30 14:06:47 INFO Agent received command: run
+2023-10-30 14:06:47 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 2
+	test_size: 0.23417379854322276
+2023-10-30 14:06:47 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=2 --test_size=0.23417379854322276
+2023-10-30 14:06:52 INFO Running runs: ['3m83recy']
+2023-10-30 14:06:57 INFO Cleaning up finished run: 3m83recy
+2023-10-30 14:06:58 INFO Agent received command: run
+2023-10-30 14:06:58 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 7
+	min_samples_split: 5
+	test_size: 0.18137513443107012
+2023-10-30 14:06:58 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=7 --min_samples_split=5 --test_size=0.18137513443107012
+2023-10-30 14:07:03 INFO Running runs: ['jma2sr1l']
+2023-10-30 14:07:08 INFO Cleaning up finished run: jma2sr1l
+2023-10-30 14:07:08 INFO Agent received command: run
+2023-10-30 14:07:08 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 5
+	test_size: 0.401490562899799
+2023-10-30 14:07:08 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=5 --test_size=0.401490562899799
+2023-10-30 14:07:13 INFO Running runs: ['mh92kf6v']
+2023-10-30 14:07:18 INFO Cleaning up finished run: mh92kf6v
+2023-10-30 14:07:19 INFO Agent received command: run
+2023-10-30 14:07:19 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 9
+	test_size: 0.3575204052292492
+2023-10-30 14:07:19 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=9 --test_size=0.3575204052292492
+2023-10-30 14:07:24 INFO Running runs: ['ammxf8ps']
+2023-10-30 14:07:29 INFO Cleaning up finished run: ammxf8ps
+2023-10-30 14:07:29 INFO Agent received command: run
+2023-10-30 14:07:29 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 10
+	test_size: 0.19756628458409528
+2023-10-30 14:07:29 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=10 --test_size=0.19756628458409528
+2023-10-30 14:07:34 INFO Running runs: ['bu4tdxcd']
+2023-10-30 14:07:39 INFO Cleaning up finished run: bu4tdxcd
+2023-10-30 14:07:40 INFO Agent received command: run
+2023-10-30 14:07:40 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 8
+	min_samples_split: 7
+	test_size: 0.32614949908818514
+2023-10-30 14:07:40 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=8 --min_samples_split=7 --test_size=0.32614949908818514
+2023-10-30 14:07:45 INFO Running runs: ['yzub1d87']
+2023-10-30 14:07:50 INFO Cleaning up finished run: yzub1d87
+2023-10-30 14:07:50 INFO Agent received command: run
+2023-10-30 14:07:50 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 3
+	test_size: 0.1634139923260161
+2023-10-30 14:07:50 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=3 --test_size=0.1634139923260161
+2023-10-30 14:07:55 INFO Running runs: ['k3t2p9cq']
+2023-10-30 14:08:01 INFO Cleaning up finished run: k3t2p9cq
+2023-10-30 14:08:01 INFO Agent received command: run
+2023-10-30 14:08:01 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 3
+	test_size: 0.41815537770808464
+2023-10-30 14:08:01 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=3 --test_size=0.41815537770808464
+2023-10-30 14:08:06 INFO Running runs: ['4u8lsw3v']
+2023-10-30 14:08:11 INFO Cleaning up finished run: 4u8lsw3v
+2023-10-30 14:08:12 INFO Agent received command: run
+2023-10-30 14:08:12 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 8
+	min_samples_split: 2
+	test_size: 0.2976352635994684
+2023-10-30 14:08:12 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=8 --min_samples_split=2 --test_size=0.2976352635994684
+2023-10-30 14:08:17 INFO Running runs: ['taj3vw0o']
+2023-10-30 14:08:22 INFO Cleaning up finished run: taj3vw0o
+2023-10-30 14:08:22 INFO Agent received command: run
+2023-10-30 14:08:22 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 6
+	test_size: 0.30197333757407613
+2023-10-30 14:08:22 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=6 --test_size=0.30197333757407613
+2023-10-30 14:08:27 INFO Running runs: ['faxnadjt']
+2023-10-30 14:08:33 INFO Cleaning up finished run: faxnadjt
+2023-10-30 14:08:33 INFO Agent received command: run
+2023-10-30 14:08:33 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 8
+	test_size: 0.37130306684289616
+2023-10-30 14:08:33 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=8 --test_size=0.37130306684289616
+2023-10-30 14:08:38 INFO Running runs: ['zg71eeca']
+2023-10-30 14:08:43 INFO Cleaning up finished run: zg71eeca
+2023-10-30 14:08:44 INFO Agent received command: run
+2023-10-30 14:08:44 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 6
+	min_samples_split: 6
+	test_size: 0.2643465386439381
+2023-10-30 14:08:44 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=6 --min_samples_split=6 --test_size=0.2643465386439381
+2023-10-30 14:08:49 INFO Running runs: ['xxh5wxpu']
+2023-10-30 14:08:54 INFO Cleaning up finished run: xxh5wxpu
+2023-10-30 14:08:54 INFO Agent received command: run
+2023-10-30 14:08:54 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 9
+	test_size: 0.4638538340368644
+2023-10-30 14:08:54 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=9 --test_size=0.4638538340368644
+2023-10-30 14:08:59 INFO Running runs: ['ijyks72o']
+2023-10-30 14:09:04 INFO Cleaning up finished run: ijyks72o
+2023-10-30 14:09:05 INFO Agent received command: run
+2023-10-30 14:09:05 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 5
+	min_samples_split: 9
+	test_size: 0.12204948780136676
+2023-10-30 14:09:05 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=5 --min_samples_split=9 --test_size=0.12204948780136676
+2023-10-30 14:09:10 INFO Running runs: ['99ct5orx']
+2023-10-30 14:09:15 INFO Cleaning up finished run: 99ct5orx
+2023-10-30 14:09:15 INFO Agent received command: run
+2023-10-30 14:09:15 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 8
+	min_samples_split: 6
+	test_size: 0.4562877749150124
+2023-10-30 14:09:15 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=8 --min_samples_split=6 --test_size=0.4562877749150124
+2023-10-30 14:09:20 INFO Running runs: ['4i6nzrjl']
+2023-10-30 14:09:26 INFO Cleaning up finished run: 4i6nzrjl
+2023-10-30 14:09:26 INFO Agent received command: run
+2023-10-30 14:09:26 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 9
+	test_size: 0.3762270540141647
+2023-10-30 14:09:26 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=9 --test_size=0.3762270540141647
+2023-10-30 14:09:31 INFO Running runs: ['7o026mni']
+2023-10-30 14:09:36 INFO Cleaning up finished run: 7o026mni
+2023-10-30 14:09:37 INFO Agent received command: run
+2023-10-30 14:09:37 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 7
+	test_size: 0.198199066578762
+2023-10-30 14:09:37 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=7 --test_size=0.198199066578762
+2023-10-30 14:09:42 INFO Running runs: ['x37jnoga']
+2023-10-30 14:09:47 INFO Cleaning up finished run: x37jnoga
+2023-10-30 14:09:47 INFO Agent received command: run
+2023-10-30 14:09:47 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 9
+	min_samples_split: 7
+	test_size: 0.10125894570375236
+2023-10-30 14:09:47 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=9 --min_samples_split=7 --test_size=0.10125894570375236
+2023-10-30 14:09:52 INFO Running runs: ['o5n1wr2a']
+2023-10-30 14:09:57 INFO Cleaning up finished run: o5n1wr2a
+2023-10-30 14:09:58 INFO Agent received command: run
+2023-10-30 14:09:58 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 8
+	test_size: 0.1969850359910074
+2023-10-30 14:09:58 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=8 --test_size=0.1969850359910074
+2023-10-30 14:10:03 INFO Running runs: ['26pd93zo']
+2023-10-30 14:10:08 INFO Cleaning up finished run: 26pd93zo
+2023-10-30 14:10:08 INFO Agent received command: run
+2023-10-30 14:10:08 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 5
+	min_samples_split: 6
+	test_size: 0.3452869730495759
+2023-10-30 14:10:08 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=5 --min_samples_split=6 --test_size=0.3452869730495759
+2023-10-30 14:10:13 INFO Running runs: ['791exn6r']
+2023-10-30 14:10:19 INFO Cleaning up finished run: 791exn6r
+2023-10-30 14:10:19 INFO Agent received command: run
+2023-10-30 14:10:19 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 8
+	test_size: 0.3104387358076511
+2023-10-30 14:10:19 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=8 --test_size=0.3104387358076511
+2023-10-30 14:10:24 INFO Running runs: ['x5ah8nbx']
+2023-10-30 14:10:34 INFO Cleaning up finished run: x5ah8nbx
+2023-10-30 14:10:35 INFO Agent received command: run
+2023-10-30 14:10:35 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 8
+	min_samples_split: 7
+	test_size: 0.4754480325370286
+2023-10-30 14:10:35 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=8 --min_samples_split=7 --test_size=0.4754480325370286
+2023-10-30 14:10:40 INFO Running runs: ['x5fxvsly']
+2023-10-30 14:10:45 INFO Cleaning up finished run: x5fxvsly
+2023-10-30 14:10:46 INFO Agent received command: run
+2023-10-30 14:10:46 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 8
+	test_size: 0.26448966601661217
+2023-10-30 14:10:46 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=8 --test_size=0.26448966601661217
+2023-10-30 14:10:51 INFO Running runs: ['lmslwkvi']
+2023-10-30 14:10:56 INFO Cleaning up finished run: lmslwkvi
+2023-10-30 14:10:56 INFO Agent received command: run
+2023-10-30 14:10:56 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 10
+	min_samples_split: 4
+	test_size: 0.20712681200340183
+2023-10-30 14:10:56 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=10 --min_samples_split=4 --test_size=0.20712681200340183
+2023-10-30 14:11:01 INFO Running runs: ['9tugh712']
+2023-10-30 14:11:07 INFO Cleaning up finished run: 9tugh712
+2023-10-30 14:11:07 INFO Agent received command: run
+2023-10-30 14:11:07 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 4
+	min_samples_split: 4
+	test_size: 0.3472049520205688
+2023-10-30 14:11:07 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=4 --min_samples_split=4 --test_size=0.3472049520205688
+2023-10-30 14:11:12 INFO Running runs: ['nxhhhtcv']
+2023-10-30 14:11:17 INFO Cleaning up finished run: nxhhhtcv
+2023-10-30 14:11:18 INFO Agent received command: run
+2023-10-30 14:11:18 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 5
+	min_samples_split: 7
+	test_size: 0.3391390643842006
+2023-10-30 14:11:18 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=5 --min_samples_split=7 --test_size=0.3391390643842006
+2023-10-30 14:11:23 INFO Running runs: ['qfotdmih']
+2023-10-30 14:11:28 INFO Cleaning up finished run: qfotdmih
+2023-10-30 14:11:28 INFO Agent received command: run
+2023-10-30 14:11:28 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 10
+	test_size: 0.15989100639220943
+2023-10-30 14:11:28 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=10 --test_size=0.15989100639220943
+2023-10-30 14:11:33 INFO Running runs: ['63gtehay']
+2023-10-30 14:11:38 INFO Cleaning up finished run: 63gtehay
+2023-10-30 14:11:39 INFO Agent received command: run
+2023-10-30 14:11:39 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 4
+	min_samples_split: 2
+	test_size: 0.4747267833885419
+2023-10-30 14:11:39 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=4 --min_samples_split=2 --test_size=0.4747267833885419
+2023-10-30 14:11:44 INFO Running runs: ['c5sbp7xi']
+2023-10-30 14:11:49 INFO Cleaning up finished run: c5sbp7xi
+2023-10-30 14:11:49 INFO Agent received command: run
+2023-10-30 14:11:49 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 10
+	min_samples_split: 4
+	test_size: 0.26912210962674826
+2023-10-30 14:11:49 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=10 --min_samples_split=4 --test_size=0.26912210962674826
+2023-10-30 14:11:54 INFO Running runs: ['hez9800e']
+2023-10-30 14:11:59 INFO Cleaning up finished run: hez9800e
+2023-10-30 14:12:00 INFO Agent received command: run
+2023-10-30 14:12:00 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 8
+	test_size: 0.21332479844674107
+2023-10-30 14:12:00 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=8 --test_size=0.21332479844674107
+2023-10-30 14:12:05 INFO Running runs: ['dmj6imad']
+2023-10-30 14:12:10 INFO Cleaning up finished run: dmj6imad
+2023-10-30 14:12:11 INFO Agent received command: run
+2023-10-30 14:12:11 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 3
+	test_size: 0.4033362632310781
+2023-10-30 14:12:11 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=3 --test_size=0.4033362632310781
+2023-10-30 14:12:16 INFO Running runs: ['77sep2i0']
+2023-10-30 14:12:21 INFO Cleaning up finished run: 77sep2i0
+2023-10-30 14:12:21 INFO Agent received command: run
+2023-10-30 14:12:21 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 6
+	min_samples_split: 9
+	test_size: 0.23460625729540432
+2023-10-30 14:12:21 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=6 --min_samples_split=9 --test_size=0.23460625729540432
+2023-10-30 14:12:26 INFO Running runs: ['sqt7vjc0']
+2023-10-30 14:12:31 INFO Cleaning up finished run: sqt7vjc0
+2023-10-30 14:12:32 INFO Agent received command: run
+2023-10-30 14:12:32 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 9
+	min_samples_split: 3
+	test_size: 0.15765834745275142
+2023-10-30 14:12:32 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=9 --min_samples_split=3 --test_size=0.15765834745275142
+2023-10-30 14:12:37 INFO Running runs: ['litqbwys']
+2023-10-30 14:12:42 INFO Cleaning up finished run: litqbwys
+2023-10-30 14:12:42 INFO Agent received command: exit
+2023-10-30 14:12:42 INFO Received exit command. Killing runs and quitting.
+2023-10-30 14:13:18 INFO Running runs: []
+2023-10-30 14:13:18 INFO Agent received command: run
+2023-10-30 14:13:18 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 8
+	test_size: 0.44012258714049934
+2023-10-30 14:13:18 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=8 --test_size=0.44012258714049934
+2023-10-30 14:13:23 INFO Running runs: ['gradhstz']
+2023-10-30 14:13:28 INFO Cleaning up finished run: gradhstz
+2023-10-30 14:13:29 INFO Agent received command: run
+2023-10-30 14:13:29 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 1
+	min_samples_split: 2
+	test_size: 0.10800459905804428
+2023-10-30 14:13:29 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=1 --min_samples_split=2 --test_size=0.10800459905804428
+2023-10-30 14:13:34 INFO Running runs: ['dttn4v16']
+2023-10-30 14:13:39 INFO Cleaning up finished run: dttn4v16
+2023-10-30 14:13:40 INFO Agent received command: run
+2023-10-30 14:13:40 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 10
+	test_size: 0.46168488197614066
+2023-10-30 14:13:40 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=10 --test_size=0.46168488197614066
+2023-10-30 14:13:45 INFO Running runs: ['tbex9f6z']
+2023-10-30 14:13:50 INFO Cleaning up finished run: tbex9f6z
+2023-10-30 14:13:50 INFO Agent received command: run
+2023-10-30 14:13:50 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 5
+	test_size: 0.11941051629408617
+2023-10-30 14:13:50 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=5 --test_size=0.11941051629408617
+2023-10-30 14:13:55 INFO Running runs: ['iccnw6ob']
+2023-10-30 14:14:01 INFO Cleaning up finished run: iccnw6ob
+2023-10-30 14:14:01 INFO Agent received command: run
+2023-10-30 14:14:01 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 3
+	min_samples_split: 2
+	test_size: 0.3632868366401849
+2023-10-30 14:14:01 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=3 --min_samples_split=2 --test_size=0.3632868366401849
+2023-10-30 14:14:06 INFO Running runs: ['nbjmq9tp']
+2023-10-30 14:14:11 INFO Cleaning up finished run: nbjmq9tp
+2023-10-30 14:14:12 INFO Agent received command: run
+2023-10-30 14:14:12 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 1
+	min_samples_split: 4
+	test_size: 0.41752351376534735
+2023-10-30 14:14:12 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=1 --min_samples_split=4 --test_size=0.41752351376534735
+2023-10-30 14:14:17 INFO Running runs: ['tzvvq9q5']
+2023-10-30 14:14:22 INFO Cleaning up finished run: tzvvq9q5
+2023-10-30 14:14:22 INFO Agent received command: run
+2023-10-30 14:14:22 INFO Agent starting run with config:
+	criterion: entropy
+	max_depth: 2
+	min_samples_split: 8
+	test_size: 0.23260099546432417
+2023-10-30 14:14:22 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=entropy --max_depth=2 --min_samples_split=8 --test_size=0.23260099546432417
+2023-10-30 14:14:27 INFO Running runs: ['agd5p7wo']
+2023-10-30 14:14:32 INFO Cleaning up finished run: agd5p7wo
+2023-10-30 14:14:33 INFO Agent received command: run
+2023-10-30 14:14:33 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 10
+	test_size: 0.1956359911820294
+2023-10-30 14:14:33 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=10 --test_size=0.1956359911820294
+2023-10-30 14:14:38 INFO Running runs: ['qm2ojzb8']
+2023-10-30 14:14:43 INFO Cleaning up finished run: qm2ojzb8
+2023-10-30 14:14:43 INFO Agent received command: run
+2023-10-30 14:14:43 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 3
+	test_size: 0.4007689100523481
+2023-10-30 14:14:43 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=3 --test_size=0.4007689100523481
+2023-10-30 14:14:48 INFO Running runs: ['nwgvbuk8']
+2023-10-30 14:14:53 INFO Cleaning up finished run: nwgvbuk8
+2023-10-30 14:14:54 INFO Agent received command: run
+2023-10-30 14:14:54 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 1
+	min_samples_split: 2
+	test_size: 0.21764538041951456
+2023-10-30 14:14:54 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=1 --min_samples_split=2 --test_size=0.21764538041951456
+2023-10-30 14:14:59 INFO Running runs: ['bdjynsbg']
+2023-10-30 14:15:04 INFO Cleaning up finished run: bdjynsbg
+2023-10-30 14:15:05 INFO Agent received command: run
+2023-10-30 14:15:05 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 3
+	min_samples_split: 3
+	test_size: 0.11438213438229076
+2023-10-30 14:15:05 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=3 --min_samples_split=3 --test_size=0.11438213438229076
+2023-10-30 14:15:10 INFO Running runs: ['07ptcg2l']
+2023-10-30 14:15:15 INFO Cleaning up finished run: 07ptcg2l
+2023-10-30 14:15:15 INFO Agent received command: run
+2023-10-30 14:15:15 INFO Agent starting run with config:
+	criterion: gini
+	max_depth: 2
+	min_samples_split: 8
+	test_size: 0.3781578537223139
+2023-10-30 14:15:15 INFO About to run command: /usr/bin/env python iris--model--sweep.py --criterion=gini --max_depth=2 --min_samples_split=8 --test_size=0.3781578537223139

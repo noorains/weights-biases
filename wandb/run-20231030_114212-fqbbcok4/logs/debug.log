@@ -1,0 +1,27 @@
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Configure stats pid to 15168
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Loading settings from /Users/noorainkazmi/.config/wandb/settings
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Loading settings from /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/settings
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-30 11:42:12,742 INFO    MainThread:15168 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'iris--model.py', 'program_abspath': '/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model.py', 'program': '/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model.py'}
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:_log_setup():528] Logging user logs to /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_114212-fqbbcok4/logs/debug.log
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/noorainkazmi/Documents/GitHub/weights-biases/wandb/run-20231030_114212-fqbbcok4/logs/debug-internal.log
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:init():568] calling init triggers
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:init():618] starting backend
+2023-10-30 11:42:12,743 INFO    MainThread:15168 [wandb_init.py:init():622] setting up manager
+2023-10-30 11:42:12,747 INFO    MainThread:15168 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-10-30 11:42:12,750 INFO    MainThread:15168 [wandb_init.py:init():628] backend started and connected
+2023-10-30 11:42:12,757 INFO    MainThread:15168 [wandb_init.py:init():720] updated telemetry
+2023-10-30 11:42:12,769 INFO    MainThread:15168 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-10-30 11:42:13,121 ERROR   MainThread:15168 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-30 11:42:13,215 ERROR   MainThread:15168 [wandb_init.py:init():1188] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/decision_tree_env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-10-30 11:42:14,235 WARNING MsgRouterThr:15168 [router.py:message_loop():77] message_loop has been closed

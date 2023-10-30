@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/noorainkazmi/Documents/GitHub/weights-biases/iris--model--sweep.py", line 14, in <module>
+    config = yaml.load(config_file, Loader=yaml.FullLoader)
+NameError: name 'yaml' is not defined
